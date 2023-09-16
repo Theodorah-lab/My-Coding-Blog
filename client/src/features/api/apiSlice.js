@@ -7,7 +7,7 @@ export const apiSlice = createApi({
     reducerPath: 'api',
     
     // Define the baseQuery, which sets the base URL for all API requests
-    baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:8080' }),
+    baseQuery: fetchBaseQuery({ baseUrl: 'https://my-coding-blog.fly.dev/' }),
     
     // Define tag types to categorize entities in the API
     tagTypes: ['Post', 'User'],
