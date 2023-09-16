@@ -98,6 +98,7 @@ article {
   color: rgb(10, 0, 0);
   width: 660px;
   
+  
 }
   
 h1 {
@@ -119,7 +120,8 @@ p {
 form {
   display: flex;
   flex-direction: column;
-  
+ 
+ 
 }
   
 textarea {
