@@ -8,7 +8,7 @@
   
 html {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  background-color: grey;
+  height: 250vh;
   color: #000;
   
 }
@@ -50,7 +50,7 @@ header {
   justify-content: space-between;
   align-items: flex-start;
   background: linear-gradient(135deg, rgba(14, 14, 14, 0.8), rgba(121, 217, 239, 0.8), rgba(0, 0, 0, 0.8));
-  color: rgb(196, 196, 196);
+  color: white;
   position: sticky;
   top: 0;
 }
@@ -107,6 +107,7 @@ h1 {
   
 h2 {
   margin-bottom: 1rem;
+  font-size: 45px;
 }
   
 p {
@@ -158,4 +159,164 @@ textarea {
 .deleteButton {
   background-color: palevioletred;
   color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    background-size: cover;
+    background-image: url('./pexels-jess-bailey-designs-839443.jpg');
+    width: 384vw;
+  }
+  nav {
+    display: flex;
+    justify-content: flex-end;
+   
+    height: 15vh;
+  }
+
+
+nav ul li {
+  display: inline-block;
+  margin-right: 3rem;
+  margin-bottom: 0;
+  text-align: center;
+  font-size:65px;
+ 
+}
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: linear-gradient(135deg, rgba(14, 14, 14, 0.8), rgba(121, 217, 239, 0.8), rgba(0, 0, 0, 0.8));
+  color: white;
+  position: sticky;
+padding-top: 60px;
+padding-bottom: 50px;
+  top: 0;
+}
+header h1{
+  font-size: 75px;
+  padding-left: 50px;
+}
+  
+main {
+  width: 60vw;
+  margin: auto;
+  padding-top: 10rem;
+ 
+  
+  
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  font-size: 55px;
+  margin: 0.5em 0;
+  width: 100%;
+  color: rgba(48, 40, 42, 0.8);
+}
+article {
+  margin: 0.5em;
+  border: none;
+  border-radius: 10px;
+  padding: 1em;
+  color: rgb(5, 5, 5);
+
+  
+}
+
+label[for="postContent"] {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 70px;
+}
+label[for="postAuthor"] {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 70px;
+}
+label[for="postTitle"] {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 70px;
+  width: 100vw;
+}
+
+h2{
+  font-size: 90px;
+  width: 200vw;
+}
+p.postCredit {
+  font-size: 35px;
+  color: #544f4f;
+  margin-top: 25px;
+}
+p.postCredit a {
+  font-size: 45px;
+  text-decoration: none;
+}
+.reactionButton {
+  margin: 0 0.25em 0 0;
+  border: none;
+  color: #000;
+  font-size: 35px;
+  width: 50px;
+}
+select {
+  font: inherit;
+ background-color: transparent;
+ border-radius: 50px;
+ border: 2px solid rgb(15, 12, 12);
+  margin-bottom: 1em;
+  font-size: 75px;
+  width: 215vw;
+}
+ul li{
+  font-size: 98px;
+}
+ol li {
+  font-size: 77px;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #555; /* Change text color to your preference */
+}
+
+input{
+  font-size: 75px;
+  background-color: transparent;
+  border-radius: 50px;
+  border: 2px solid rgb(15, 12, 12);
+  width: 215vw;
+  border-color: 2px 2px 2px black;
+
+}
+textarea{
+height: 80vh;
+width: 215vw;
+border-radius: 50px;
+border: 2px solid rgb(15, 12, 12);
+background-color: transparent;
+font-size: 99px;
+}
+
+button {
+  background-color: transparent;
+  color: black;
+  border-radius: 50px;
+  border: 2px solid rgb(15, 12, 12);
+  width: 10vw;
+  font: inherit;
+  margin-bottom: 1em;
+  font-size: 65px;
+  width: 100vw;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ysabeau SC", sans-serif;
+  text-align: end;
+}
+
 }

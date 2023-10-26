@@ -21,23 +21,38 @@ let posts =  [
     "id": 2,
     "title": "The Curriculum and Learning Experience",
     "body": "One of the things that immediately struck me about Melsoft Academy Bootcamp was the well-structured curriculum. Covering a wide range of topics, from programming languages to web development frameworks, the syllabus was both comprehensive and up-to-date with industry trends. The daily schedule was intense but well-organized, balancing theory with hands-on practice. ...",
-    "userId": 2,
+    "userId": 1,
     "date": "2023-04-13T23:52:23.4372"
   },
   {
     "id": 3,
-    "title": "Projects That Shaped My Skillss",
+    "title": "Projects That Shaped My Skills",
     "body": "One of the highlights of the bootcamp was the opportunity to work on real-world projects. These projects pushed me out of my comfort zone and allowed me to apply the knowledge I had gained. From building web applications to tackling complex coding challenges, the projects were the ultimate test of our skills....",
-    "userId": 3,
-    "date": "2023-06-25T15:33.4372"
+    "userId": 1,
+    "date": "2023-05-25T15:33.4372"
   },
   {
     "id": 4,
     "title": "Challenges and Growth",
     "body": "It wasn't all  smooth sailing. There were moments of frustration, sleepless ....",
-    "userId": 4,
-    "date": "2023-08-26T00:01.4372"
-  }
+    "userId": 1,
+    "date": "2023-06-26T00:01.4372"
+  },
+  {
+    "id": 5,
+    "title": "The Frustration and Growth",
+    "body": "Yet, it's not all smooth sailing. There have been moments of frustration, where my queries didn't return the expected results or where I had to spend hours fine-tuning a database schema. These moments can be tough, and it's easy to feel overwhelmed. But it's in these moments that I've grown the most. ....",
+    "userId": 1,
+    "date": "2023-09-26T00:01.4372"
+  },
+  {
+    "id": 6,
+    "title": "Diving Deeper: A Rollercoaster of Emotions",
+    "body": "As I journey deeper into the intricate world of databases, I can't help but feel a mix of excitement, fascination, and, at times, a dash of frustration. It's akin to riding a rollercoaster, and let me tell you, it's been a thrilling adventure.....",
+    "userId": 1,
+    "date": "2023-10-26T00:01.4372"
+  },
+  
 ]
 
 // Create a new post
@@ -101,3 +116,5 @@ exports.postsFindByUserId = (req, res) => {
   const id = req.query.userId;
   res.send(posts.filter(post => post.userId === parseInt(id))); 
 };
+
+
